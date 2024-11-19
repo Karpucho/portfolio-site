@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igor Karpov</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- MAIN -->
+    <main>
+      <!-- SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatars.png"
+              alt="Igor Karpov"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Igor Karpov">
+              Igor Karpov
+            </h1>
+
+            <p class="title">Frontend Software Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="document-text-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Resume</p>
+
+                <a
+                  href="https://disk.yandex.ru/i/e-iqOykw1YZeJw"
+                  class="contact-link"
+                  >Download Resume</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Linkedin</p>
+
+                <a
+                  href="https://www.linkedin.com/in/karpucho/"
+                  class="contact-link"
+                >linkedin.com/in/karpucho</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Github</p>
+
+                <a
+                  href="https://github.com/Karpucho"
+                  class="contact-link"
+                >github.com/Karpucho</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:karpov.zgr@gmail.com" class="contact-link"
+                  >karpov.zgr@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Brooklyn, NY</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list"></ul>
+        </div>
+      </aside>
+
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text"> <p> I’m Igor Karpov. Frontend developer with 3 years of commercial experience building dynamic, user-friendly interfaces using JavaScript/TypeScript, React, and Redux/RTK Query. Skilled in delivering enterprise-grade web applications with a strong focus on performance, maintainability, and scalability.</p> 
+            <p>I have hands-on experience working in teams of various sizes, both remotely and on-site, and am well-versed in Agile/Scrum workflows. My approach combines technical precision with clear communication and a proactive mindset. I take ownership of my work, ensuring high-quality outcomes while fostering collaboration. Passionate about creating software solutions that not only meet business goals but also delight users.</p> </section>
+
+          <!--
+          - service
+        -->
+        <section class="service">
+          <h3 class="h3 service-title">What I'm Doing</h3>
+        
+          <ul class="service-list">
+            <!-- <li class="service-item">
+              <div class="service-icon-box">
+                <img
+                  src="./assets/images/icon-ai.svg"
+                  alt="AI/ML icon"
+                  width="40"
+                />
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning (AI/ML)</h4>
+        
+                <p class="service-item-text">
+                  Leveraging AI and ML to build intelligent systems that learn and improve from data.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img
+                  src="./assets/images/icon-research.svg"
+                  alt="Research icon"
+                  width="40"
+                />
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research on LLMs</h4>
+        
+                <p class="service-item-text">
+                  Conducting advanced research on LLMs to enhance their capabilities across domains.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img
+                  src="./assets/images/icon-data.svg"
+                  alt="Data science icon"
+                  width="40"
+                />
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+        
+                <p class="service-item-text">
+                  Applying data science to extract insights from complex data sets for informed decisions.
+                </p>
+              </div>
+            </li> -->
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img
+                  src="./assets/images/icon-dev.svg"
+                  alt="Web development icon"
+                  width="40"
+                />
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+        
+                <p class="service-item-text">
+                  Creating websites that integrate front-end and back-end technologies for smooth user experiences.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!--
+      - #RESUME
+    -->
+
+    <article class="resume" data-page="resume">
+      <header>
+        <h2 class="h2 article-title">Resume</h2>
+      </header>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="briefcase-outline"></ion-icon>
+          </div>
+    
+          <h3 class="h3">Experience</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Frontend Developer - <i><a
+                href="https://amtech.ru/"
+                class="contact-link"
+              >Amtech</a></i>
+            </h4>
+    
+            <span>July 2023 — Present</span>
+    
+            <p class="timeline-text">
+              1. Modernized state management by migrating from Redux to RTK Query, reducing API-related code by 31% and cutting feature development time by about 19%.<br />
+              2. Improved platform security by implementing role-based access control system supporting 13 user roles, enabling granular access management for 1000+ enterprise users.<br />
+              3. Designed real-time notification infrastructure processing 40+ concurrent events.<br />
+              4. Cut bundle size 26% by implementing dynamic imports and code splitting.
+            </p>
+          </li>
+
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Frontend Developer - <i><a
+                href="https://maximatelecom.ru/en"
+                class="contact-link"
+              >MaximaTelecom</a></i>
+            </h4>
+    
+            <span>June 2022 — July 2023</span>
+    
+            <p class="timeline-text">
+              1. Built real-time analytics dashboard using Recharts.js, accelerating executive decision-making process.<br />
+              2. Reduced support tickets by 44% by implementing self-service password recovery and creating knowledge base with FAQ section.<br />
+              3. Collaborated with team to develop custom UI component library, implementing 8+ core reusable components that standardized design across the project.<br />
+              4. Enhanced user experience by redesigning legacy Ant Design components to modern UI kit, leading to an increase in user engagement.
+            </p>
+          </li>
+
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Fullstack Software Engineer - <i>Outsourcing team</i>
+            </h4>
+    
+            <span>December 2021 — April 2022</span>
+    
+            <p class="timeline-text">
+              1. Developed shared React component library with 10+ reusable elements, reducing development time for new features by 16%.<br />
+              2. Implemented secure auth system with JWT and email verification, reducing unauthorized access attempts.<br />
+              3. Built automated email service with Nodemailer for user verification and order notifications, handling 50+ transactional emails daily.
+            </p>
+          </li>
+        </ol>
+      </section>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="star-outline"></ion-icon>
+          </div>
+    
+          <h3 class="h3">Projects</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Cloud Storage
+            </h4>
+    
+            <span>December 2021 — May 2022</span>
+    
+            <p class="timeline-text">
+              1. Built a full-stack cloud storage application inspired by Google Drive, implementing user authentication with JWT. <br />
+              2. Engineered a responsive file management system with dragAndDrop upload, batch processing, and real-time search. <br />
+              3. Developed RESTful API endpoints using Node.js and Express to handle file operations and user management.
+            </p>
+          </li>
+
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              GitHub Analytics Tool 
+            </h4>
+    
+            <span>April 2022 – June 2022</span>
+    
+            <p class="timeline-text">
+              1. Built a React application to search and display trending GitHub repositories using GitHub API. <br />
+              2. Created a custom state management system with Redux and Redux-Thunk for handling API requests. <br />
+              3. Implemented real-time search functionality with debouncing for better performance.
+            </p>
+          </li>
+        </ol>
+      </section>
+    
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="build-outline"></ion-icon>
+          </div>
+    
+          <h3 class="h3">Skills</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Languages
+            </h4>
+    
+            <p class="timeline-text">
+              TypeScript, JavaScript, HTML/CSS (SCSS), SQL (PostgreSQL)
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Frameworks/Libraries
+            </h4>
+    
+            <p class="timeline-text">
+              React, Redux (Toolkit, RTK Query), MobX, Ant Design, Bootstrap, Recharts, Storybook, npm, Formik, Node.js, Express
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Developer Tools
+            </h4>
+    
+            <p class="timeline-text">
+              Git, GitHub, GitLab, VS Code, WebStorm, Jira, Figma
+            </p>
+          </li>
+    
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Methodologies
+            </h4>
+    
+            <p class="timeline-text">
+              SOLID, OOP, Agile, Scrum
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+    
+          <h3 class="h3">Education</h3>
+        </div>
+    
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              Elbrus Coding Bootcamp, Saint-Petersburg (Russia)
+            </h4>
+    
+            <span>2021</span>
+    
+            <p class="timeline-text">
+              Fullstack Software Engineer
+            </p>
+          </li>
+
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">
+              ScrumTrek, Moscow (Russia)
+            </h4>
+    
+            <span>2022</span>
+    
+            <p class="timeline-text">
+              Certified Agile Professional
+            </p>
+          </li>
+        </ol>
+      </section>
+    </article>
+    
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <!-- Here it ends -->
+              <!-- Here it starts -->
+
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <div class="content-card info-box">
+                  <button class="skill-button" data-code-btn data-link="https://github.com/Karpucho/bloody-clouds">
+                    <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                              <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-project-btn data-link="https://github.com/Karpucho/bloody-clouds">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <!-- ИКОНКА -->
+                    <img src="./assets/images/Project6.png" alt="Storage" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Cloud Storage</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <div class="content-card info-box">
+                  <button class="skill-button" data-code-btn data-link="https://github.com/Karpucho/github-finder">
+                    <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                              <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    Github
+                  </button>
+                </div>
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-project-btn data-link="https://github.com/Karpucho/github-finder">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <!-- ИКОНКА -->
+                    <img src="./assets/images/Project-7.png" alt="Finder" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">GitHub Analytics Tool</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+  
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form
+              action="https://formspree.io/f/xkgnzbko"
+              method="post"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                rows="15"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
